@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Entry App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#" class="nav-ved">Marks-Entry-App</a>
+        <a href="./welcome1.html">Home</a>
+                <a href="./pending task.html">Show Mark</a>
+                <a href="#">Logout</a>
+      </div>
+      <div class="nav-right">
+        <a href="#">student: a2</a>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <section class="content-header">
+      <h1>Show Marks</h1>
+      <h2></h2>
+    </section>
+    
+    <section class="content-table">
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Student Name</th>
+            <th>Group Name</th>
+            <th>Subject Name</th>
+            <th>Theory</th>
+            <th>Lab</th>
+            <th>IA1</th>
+            <th>IA2</th>
+
+          </tr>
+        </thead>
+      </table>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container:hover {
+    color: #cce7ff;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a, .nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-ved {
+  font-weight: bold;
+}
+
+.user-info {
+  margin-right: 1rem;
+}
+
+.content-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.content-table {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const editButtons = document.querySelectorAll('.edit-button');
+  editButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      alert('Edit button clicked');
+    });
+  });
+});
+</script>
